@@ -4,13 +4,13 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 1.25rem 2rem;
+  padding: 0.75rem 2rem;
   border-bottom: 1px solid var(--border);
   background: var(--card);
 }
 
 .header__logo {
-  height: 2.75rem;
+  height: 3.25rem;
   width: auto;
 }
 
