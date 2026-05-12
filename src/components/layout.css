@@ -26,3 +26,8 @@
   max-width: 1240px;
   margin: 0 auto;
 }
+
+.app-shell--fluid {
+  max-width: none;
+  padding: 1.5rem 2rem;
+}

@@ -19,6 +19,7 @@
 @import "./components/footer.css";
 @import "./components/spinner.css";
 @import "./components/typography.css";
+@import "./components/kpi.css";
 
 /* ── Tailwind ── */
 @tailwind base;

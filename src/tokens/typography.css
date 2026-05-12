@@ -3,14 +3,14 @@
   --font-serif: 'Lora', Georgia, serif;
   --font-mono:  ui-monospace, 'Cascadia Code', monospace;
 
-  /* size scale (14px base) */
-  --text-xs:   0.65rem;
-  --text-sm:   0.75rem;
-  --text-base: 0.8rem;
-  --text-md:   0.9rem;
-  --text-lg:   1rem;
-  --text-xl:   1.25rem;
-  --text-2xl:  1.5rem;
+  /* size scale */
+  --text-xs:   0.72rem;
+  --text-sm:   0.85rem;
+  --text-base: 0.92rem;
+  --text-md:   1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.4rem;
+  --text-2xl:  1.65rem;
   --text-hero: clamp(2rem, 4vw, 3.2rem);
 
   /* weights */

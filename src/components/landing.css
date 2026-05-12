@@ -42,6 +42,18 @@
   font-weight: 600;
 }
 
+.sidebar__item a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidebar__item--active {
+  background: var(--blue);
+  color: white;
+  border-color: var(--blue);
+}
+
 .hero {
   background: var(--card);
   border: 1px solid var(--border);
