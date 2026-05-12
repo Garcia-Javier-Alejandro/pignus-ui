@@ -1,0 +1,31 @@
+:root {
+  --font-sans:  system-ui, -apple-system, sans-serif;
+  --font-serif: 'Lora', Georgia, serif;
+  --font-mono:  ui-monospace, 'Cascadia Code', monospace;
+
+  /* size scale (14px base) */
+  --text-xs:   0.65rem;
+  --text-sm:   0.75rem;
+  --text-base: 0.8rem;
+  --text-md:   0.9rem;
+  --text-lg:   1rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-hero: clamp(2rem, 4vw, 3.2rem);
+
+  /* weights */
+  --weight-normal: 400;
+  --weight-semi:   600;
+  --weight-bold:   700;
+
+  /* tracking */
+  --tracking-tight:  0.02em;
+  --tracking-normal: 0.04em;
+  --tracking-wide:   0.08em;
+  --tracking-wider:  0.12em;
+  --tracking-widest: 0.14em;
+
+  /* leading */
+  --leading-tight: 1.05;
+  --leading-prose: 1.7;
+}

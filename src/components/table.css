@@ -1,0 +1,122 @@
+@keyframes rise {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.table-section {
+  animation: rise 0.18s ease;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 31.5rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  scrollbar-width: auto;
+  scrollbar-color: var(--border-mid) var(--cream);
+}
+
+.table-wrap::-webkit-scrollbar { height: 8px; }
+.table-wrap::-webkit-scrollbar-track { background: var(--cream); }
+.table-wrap::-webkit-scrollbar-thumb { background: var(--border-mid); border-radius: 4px; }
+.table-wrap::-webkit-scrollbar-thumb:hover { background: var(--ink-3); }
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.orders-table thead {
+  background: var(--cream);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.orders-table th {
+  padding: 0.55rem 0.9rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.orders-table th.num,
+.orders-table td.num { text-align: right; }
+
+.orders-table tbody tr:nth-child(odd)  { background: var(--card); }
+.orders-table tbody tr:nth-child(even) { background: var(--cream); }
+.orders-table tbody tr:hover           { background: var(--cream-hover) !important; }
+
+.orders-table tbody tr {
+  border-bottom: 1px solid var(--border);
+}
+.orders-table tbody tr:last-child { border-bottom: none; }
+
+.orders-table td {
+  padding: 0.55rem 0.9rem;
+  white-space: nowrap;
+  color: var(--ink);
+}
+
+.orders-table td.empty {
+  padding: 2.5rem;
+  text-align: center;
+  color: var(--ink-3);
+  white-space: normal;
+}
+
+.orders-table th.check-col,
+.orders-table td.check-col {
+  width: 2rem;
+  min-width: 2rem;
+  padding: 0.4rem 0.5rem;
+  text-align: center;
+}
+
+td.edit-actions {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* row state modifiers */
+
+.orders-table tbody tr.highlighted {
+  background: rgba(162, 122, 42, 0.22) !important;
+}
+
+.orders-table tbody tr.manual-row {
+  background: rgba(30, 130, 60, 0.06) !important;
+}
+.orders-table tbody tr.manual-row:hover {
+  background: rgba(30, 130, 60, 0.12) !important;
+}
+
+.orders-table tbody tr.edit-row {
+  background: var(--cream) !important;
+}
+
+.orders-table tbody tr.edit-row td.check-col {
+  width: auto;
+  min-width: 4.5rem;
+}
+
+/* scrollbar variant for tables that scroll differently */
+.table-scroll::-webkit-scrollbar { height: 8px; }
+.table-scroll::-webkit-scrollbar-track { background: var(--cream); border-radius: 4px; }
+.table-scroll::-webkit-scrollbar-thumb { background: var(--border-mid); border-radius: 4px; }
+.table-scroll::-webkit-scrollbar-thumb:hover { background: var(--ink-3); }
+.table-scroll { scrollbar-width: auto; scrollbar-color: var(--border-mid) var(--cream); }
+
+/* positions-table alias (PignusInversiones) — identical alternating-row behavior */
+.positions-table tbody tr:nth-child(odd)  { background-color: var(--card); }
+.positions-table tbody tr:nth-child(even) { background-color: var(--cream); }
+.positions-table tbody tr:hover           { background-color: var(--cream-hover) !important; }

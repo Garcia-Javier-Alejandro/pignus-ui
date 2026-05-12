@@ -1,0 +1,30 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "../PignusFacturacion/public/**/*.{html,js}",
+    "../PignusPortal/**/*.html",
+    "../PignusInversiones/dashboard/frontend/**/*.{html,js}",
+    "./src/**/*.css",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        cream:         '#f5f0e8',
+        'cream-hover': '#ede7d9',
+        card:          '#ffffff',
+        border:        '#ddd5c0',
+        'border-mid':  '#c8bfa8',
+        ink:           '#1c1814',
+        'ink-2':       '#5c5248',
+        'ink-3':       '#9c8f84',
+        blue:          '#1d4ed8',
+        ok:            '#1a6b2a',
+        err:           '#c23b22',
+      },
+      fontFamily: {
+        serif: ['Lora', 'Georgia', 'serif'],
+      },
+    },
+  },
+  plugins: [],
+};

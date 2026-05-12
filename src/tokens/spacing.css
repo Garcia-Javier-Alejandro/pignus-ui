@@ -1,0 +1,25 @@
+:root {
+  /* spacing scale (rem, anchored to 14px base) */
+  --space-1:  0.2rem;
+  --space-2:  0.3rem;
+  --space-3:  0.4rem;
+  --space-4:  0.5rem;
+  --space-5:  0.6rem;
+  --space-6:  0.75rem;
+  --space-7:  0.85rem;
+  --space-8:  1rem;
+  --space-9:  1.25rem;
+  --space-10: 1.5rem;
+  --space-11: 1.75rem;
+  --space-12: 2rem;
+  --space-16: 3rem;
+
+  /* border-radius scale */
+  --radius-xs: 0.3rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 0.9rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+  --radius-pill: 99px;
+}

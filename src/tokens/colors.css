@@ -1,14 +1,16 @@
-/* Color tokens */
 :root {
-  --color-primary: #0d6efd;
-  --color-secondary: #6c757d;
-  --color-success: #198754;
-  --color-danger: #dc3545;
-  --color-warning: #ffc107;
-  --color-info: #0dcaf0;
-  --color-light: #f8f9fa;
-  --color-dark: #212529;
-
-  --background-color: var(--color-light);
-  --text-color: var(--color-dark);
+  --cream:       #f5f0e8;
+  --cream-hover: #ede7d9;
+  --card:        #ffffff;
+  --border:      #ddd5c0;
+  --border-mid:  #c8bfa8;
+  --ink:         #1c1814;
+  --ink-2:       #5c5248;
+  --ink-3:       #9c8f84;
+  --blue:        #1d4ed8;
+  --ok:          #1a6b2a;
+  --err:         #c23b22;
+  /* aliases for backward compat with PignusInversiones */
+  --green:       #1a6b2a;
+  --red:         #c23b22;
 }
