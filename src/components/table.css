@@ -25,7 +25,7 @@
 .orders-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.8rem;
+  font-size: 13px;
 }
 
 .orders-table thead {
@@ -37,10 +37,10 @@
 }
 
 .orders-table th {
-  padding: 0.55rem 0.9rem;
-  font-size: 0.65rem;
+  padding: 0.65rem 0.95rem;
+  font-size: 10.5px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--ink-3);
   text-align: left;
@@ -50,9 +50,8 @@
 .orders-table th.num,
 .orders-table td.num { text-align: right; }
 
-.orders-table tbody tr:nth-child(odd)  { background: var(--card); }
-.orders-table tbody tr:nth-child(even) { background: var(--cream); }
-.orders-table tbody tr:hover           { background: var(--cream-hover) !important; }
+.orders-table tbody tr { background: var(--card); }
+.orders-table tbody tr:hover td { background: var(--cream-hover); }
 
 .orders-table tbody tr {
   border-bottom: 1px solid var(--border);
@@ -60,10 +59,38 @@
 .orders-table tbody tr:last-child { border-bottom: none; }
 
 .orders-table td {
-  padding: 0.55rem 0.9rem;
+  padding: 0.85rem 0.95rem;
   white-space: nowrap;
   color: var(--ink);
 }
+
+.orders-table .row-actions {
+  opacity: 0;
+  transition: opacity 0.12s;
+  display: inline-flex;
+  gap: 0.25rem;
+}
+
+.orders-table tbody tr:hover .row-actions { opacity: 1; }
+
+.iconbtn {
+  width: 28px;
+  height: 28px;
+  border-radius: 0.45rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--ink-2);
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.iconbtn:hover { background: var(--cream); color: var(--ink); }
+.iconbtn svg { width: 14px; height: 14px; stroke-width: 1.6; }
+.iconbtn--danger { color: var(--err); border-color: transparent; background: transparent; }
+.iconbtn--danger:hover { background: rgba(194, 59, 34, 0.06); border-color: rgba(194, 59, 34, 0.2); }
 
 .orders-table td.empty {
   padding: 2.5rem;

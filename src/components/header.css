@@ -1,7 +1,6 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
   padding: 0.75rem 2rem;
@@ -37,4 +36,39 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.header__rule {
+  width: 1px;
+  height: 1.75rem;
+  background: var(--border);
+  flex-shrink: 0;
+}
+
+.header__wordmark {
+  font-family: var(--font-serif);
+  font-size: 1.375rem;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.header__pulse {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--text-sm);
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+
+.header__pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 99px;
+  background: var(--ok);
+  box-shadow: 0 0 0 3px rgba(26, 107, 42, 0.12);
+  flex-shrink: 0;
 }
