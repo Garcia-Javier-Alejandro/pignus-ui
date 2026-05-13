@@ -47,6 +47,23 @@
   white-space: nowrap;
 }
 
+.orders-table th.th--sortable { cursor: pointer; user-select: none; }
+.orders-table th.th--sortable:hover { color: var(--ink-2); }
+
+.orders-table th.th--sort-asc::after,
+.orders-table th.th--sort-desc::after {
+  content: '';
+  display: inline-block;
+  margin-left: 0.3em;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+.orders-table th.th--sort-asc::after  { border-bottom: 5px solid currentColor; }
+.orders-table th.th--sort-desc::after { border-top: 5px solid currentColor; }
+
 .orders-table th.num,
 .orders-table td.num { text-align: right; }
 
@@ -134,6 +151,14 @@ td.edit-actions {
 .orders-table tbody tr.edit-row td.check-col {
   width: auto;
   min-width: 4.5rem;
+}
+
+.cell-truncate {
+  display: block;
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* scrollbar variant for tables that scroll differently */
