@@ -1,6 +1,6 @@
 :root {
-  --font-sans:  system-ui, -apple-system, sans-serif;
-  --font-serif: 'Lora', Georgia, serif;
+  --font-sans:  'Outfit', system-ui, sans-serif;
+  --font-serif: 'Quicksand', system-ui, sans-serif;
   --font-mono:  ui-monospace, 'Cascadia Code', monospace;
 
   /* size scale */
