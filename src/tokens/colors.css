@@ -10,6 +10,10 @@
   --blue:        #1d4ed8;
   --ok:          #1a6b2a;
   --err:         #c23b22;
+  --gold:        #a27a2a;
+  --pending-bg:  #fef9c3;
+  --pending-fg:  #92400e;
+  --pending-bdr: #fde68a;
   /* aliases for backward compat with PignusInversiones */
   --green:       #1a6b2a;
   --red:         #c23b22;

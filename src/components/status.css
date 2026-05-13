@@ -62,6 +62,6 @@
   flex-shrink: 0;
 }
 
-.pill--ok      { color: var(--ok);   background: rgba(26, 107, 42, 0.08);  border-color: rgba(26, 107, 42, 0.18); }
-.pill--pending { color: var(--gold); background: rgba(162, 122, 42, 0.10); border-color: rgba(162, 122, 42, 0.25); }
-.pill--gold    { color: var(--gold); background: rgba(162, 122, 42, 0.10); border-color: rgba(162, 122, 42, 0.25); }
+.pill--ok      { color: var(--ok);          background: rgba(26, 107, 42, 0.08);  border-color: rgba(26, 107, 42, 0.18); }
+.pill--pending { color: var(--pending-fg);  background: var(--pending-bg);        border-color: var(--pending-bdr); }
+.pill--gold    { color: var(--pending-fg);  background: var(--pending-bg);        border-color: var(--pending-bdr); }
