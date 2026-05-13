@@ -31,3 +31,33 @@
   max-width: none;
   padding: 1.5rem 2rem;
 }
+
+.mod-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  padding: 0.25rem;
+}
+
+.mod-nav__item {
+  padding: 0.4rem 1.1rem;
+  border-radius: 99px;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--ink-2);
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+
+.mod-nav__item:hover {
+  color: var(--ink);
+}
+
+.mod-nav__item--active {
+  background: white;
+  color: var(--ink);
+  box-shadow: 0 1px 4px rgba(28,24,20,0.1);
+}
