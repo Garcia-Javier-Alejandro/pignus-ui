@@ -43,6 +43,9 @@
 }
 
 .mod-nav__item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.4rem 1.1rem;
   border-radius: 99px;
   font-size: var(--text-sm);
@@ -60,4 +63,9 @@
   background: white;
   color: var(--ink);
   box-shadow: 0 1px 4px rgba(28,24,20,0.1);
+}
+
+/* Tight pill for icon-only entries (e.g. a home glyph instead of 'Portal'). */
+.mod-nav__item--icon {
+  padding: 0.4rem 0.65rem;
 }
