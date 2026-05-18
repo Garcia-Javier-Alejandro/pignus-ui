@@ -67,6 +67,36 @@ The WSJ-inspired palette is defined in `src/tokens/colors.css` as CSS custom pro
 
 These are also available as Tailwind color utilities: `bg-cream`, `text-ink`, `border-border-mid`, etc.
 
+## Standard action icons
+
+PignusUI is CSS-only, so shared icons are documented as inline SVG snippets rather than exported components.
+Use the existing `.iconbtn` styles for compact table and toolbar actions.
+
+### Edit
+
+Use the pencil icon for edit actions:
+
+```html
+<button class="iconbtn" title="Editar" aria-label="Editar">
+  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 20h4l10-10-4-4L4 16v4z"/>
+    <path d="M14 6l4 4"/>
+  </svg>
+</button>
+```
+
+### Delete
+
+Use the trash can icon for delete actions. Destructive actions must also use `.iconbtn--danger`.
+
+```html
+<button class="iconbtn iconbtn--danger" title="Eliminar" aria-label="Eliminar">
+  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 7h16M9 7V5a2 2 0 012-2h2a2 2 0 012 2v2M6 7l1 13a2 2 0 002 2h6a2 2 0 002-2l1-13"/>
+  </svg>
+</button>
+```
+
 ## Deploying
 
 Build locally then deploy via wrangler:
