@@ -61,7 +61,7 @@ The WSJ-inspired palette is defined in `src/tokens/colors.css` as CSS custom pro
 | `--ink` | `#1c1814` | Primary text |
 | `--ink-2` | `#5c5248` | Secondary text |
 | `--ink-3` | `#9c8f84` | Muted/tertiary text |
-| `--blue` | `#1d4ed8` | Primary action |
+| `--blue` | `#1BBFA1` | Primary action |
 | `--ok` | `#1a6b2a` | Success state |
 | `--err` | `#c23b22` | Error state |
 

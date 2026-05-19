@@ -72,7 +72,7 @@ module.exports = {
         ink:           '#1c1814',
         'ink-2':       '#5c5248',
         'ink-3':       '#9c8f84',
-        blue:          '#1d4ed8',
+        blue:          '#1BBFA1',
         ok:            '#1a6b2a',
         err:           '#c23b22',
       },
