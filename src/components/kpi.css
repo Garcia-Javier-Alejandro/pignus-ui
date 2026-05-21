@@ -17,7 +17,7 @@
 }
 
 .kpi-card__eyebrow {
-  font-size: var(--text-xs);
+  font-size: var(--text-sm);
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -42,7 +42,7 @@
   align-items: center;
   gap: 0.5rem;
   flex-wrap: wrap;
-  font-size: var(--text-xs);
+  font-size: 1.05rem;
   color: var(--ink-3);
   margin-top: auto;
 }
