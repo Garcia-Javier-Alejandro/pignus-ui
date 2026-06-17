@@ -20,6 +20,7 @@
 @import "./components/spinner.css";
 @import "./components/typography.css";
 @import "./components/kpi.css";
+@import "./components/modal.css";
 
 /* ── Tailwind ── */
 @tailwind base;
